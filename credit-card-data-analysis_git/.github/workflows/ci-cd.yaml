@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  # Job 1: Run ONLY `test_transactions_processing.py ` for Dev Branch
+  # Job 1: Run ONLY `test_transactions_processing.py` for Dev Branch
   run-tests:
     if: github.ref == 'dev'
     runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set Up Python
-        uses: actions/setup-python@v3 
+        uses: actions/setup-python@v3
         with:
           python-version: "3.11"
 
@@ -32,7 +32,7 @@ jobs:
   deploy-to-prod:
     if: github.ref == 'main'
     runs-on: ubuntu-latest
- 
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
