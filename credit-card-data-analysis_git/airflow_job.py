@@ -15,7 +15,7 @@ default_args = {
     'start_date': datetime(2025, 2, 7),
 }
 
-# Define the DAG
+# Define the DAG 
 with DAG(
     dag_id="credit_card_transactions_dataproc_dag",
     default_args=default_args,
