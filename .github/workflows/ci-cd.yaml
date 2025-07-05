@@ -50,7 +50,7 @@ jobs:
       # Upload PySpark Job to GCS
       - name: Upload Spark Job to GCS
         run: |
-          gsutil cp gs://credit-card-data-analysis-grow/spark_job/spark_job.py
+          gsutil cp credit-card-data-analysis_git/spark_job.py gs://credit-card-data-analysis-grow/spark_job/
 
       # Upload Airflow DAG to Composer
       - name: Upload Airflow DAG to Composer
