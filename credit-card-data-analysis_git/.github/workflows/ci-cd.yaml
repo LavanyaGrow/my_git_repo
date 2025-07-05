@@ -9,7 +9,7 @@ on:
 jobs:
   # Job 1: Run ONLY `test_transactions_processing.py` for Dev Branch
   run-tests:
-    if: github.ref == 'refs/heads/dev'
+    if: github.ref == 'dev'
     runs-on: ubuntu-latest
 
     steps:
@@ -30,9 +30,9 @@ jobs:
 
   # Job 2: Upload Airflow DAG & PySpark Job to GCS (Only for Main Branch)
   deploy-to-prod:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'main'
     runs-on: ubuntu-latest
-
+ 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
