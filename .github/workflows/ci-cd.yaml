@@ -58,4 +58,4 @@ jobs:
           gcloud composer environments storage dags import \
             --environment airflow \
             --location asia-south1 \
-            --source airflow_job.py
+            --source credit-card-data-analysis_git/airflow_job.py
