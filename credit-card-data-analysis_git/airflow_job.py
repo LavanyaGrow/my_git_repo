@@ -16,7 +16,7 @@ default_args = {
 }
 
 # Define the DAG 
-with DAG(
+with DAG( 
     dag_id="credit_card_transactions_dataproc_dag",
     default_args=default_args,
     schedule_interval=None,
