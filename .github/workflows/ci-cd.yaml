@@ -30,7 +30,7 @@ jobs:
 
   # Job 2: Upload Airflow DAG & PySpark Job to GCS (Only for Main Branch)
   deploy-to-prod:
-    if: github.ref_name == 'main'
+    if: github.ref_name == 'dev'
     runs-on: ubuntu-latest
 
     steps:
