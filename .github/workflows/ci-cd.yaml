@@ -23,10 +23,10 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install -r requirements.txt
+          pip install -r credit-card-data-analysis_git/requirements.txt
 
       - name: Run Pytest for `test_transactions_processing.py`
-        run: pytest tests/test_transactions_processing.py
+        run: pytest credit-card-data-analysis_git/tests/test_transactions_processing.py
 
   # Job 2: Upload Airflow DAG & PySpark Job to GCS (Only for Main Branch)
   deploy-to-prod:
